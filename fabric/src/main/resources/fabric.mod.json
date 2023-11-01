@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "telefragging",
+  "version": "${version}",
+  "name": "Telefragging",
+  "description": "Makes teleportation more exciting :)",
+  "authors": [
+    "PigCart"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/telefragging/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pigcart.telefragging.fabric.TelefraggingFabric"
+    ]
+  },
+  "mixins": [
+    "telefragging.mixins.json",
+    "telefragging-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1",
+    "architectury": ">=9.1.12"
+  }
+}
